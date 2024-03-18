@@ -1,0 +1,93 @@
+Curso SejaDev : Pagina de Login
+
+01 : Comecar o html
+02 : comecando com html 5, depois alterando a linguagem
+03 : colocar no titulo, Pagina de Login
+04 : logo abaixo incluir o css na pagina html, criando um link
+          <link rel="stylesheet" href="styles.css"/>
+05 : no caso vamos montar um projeto que vai usar cor na pagina inteira
+06 : ai vamos no css e comecar a estilisar a pagina dentro da tag body
+              body {      }
+                     background: linear-gradient( 145deg, #2A1F59, #967AFE);
+                     min-height: 100vh;
+                     height: 100%;
+                     padding: 0;
+                     margin: 0;
+07: ai vamos no html e colocamos uma div dentro da tag body com um h3 dentro dela
+          <div>
+            <h3>Entre em sua Conta<h3/>
+08: ai vamos no css e estilizar a div
+              .login-box {     }
+                           background-color: original white, mas coloquei aqua (pq o gradient nao ta dando certo)
+                           border-radius: 10px;
+                           width: 400px;
+                           padding: 30px;
+09: ai vamos estilisar e criar uma classe para o h3
+    ai estilizar ele acima do .login-box
+              h3 {      }
+                    font-size: 32px;
+                    font-weight: bolder;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+10: ai no css dentro da tag body, vamos incluir
+                    displey: flex;
+                    justify-content: center;
+                    align-items: center;
+11: ai vai ao google fonts para trocar a fonte do texto, que vai ser a roboto 400 regular
+    ai copiar o link la no html logo abaixo do link do css
+    ai copiar o link la no css e incluir dentro da tag body
+12: agora comecar o furmulario
+    ai ir no html dentro da div abaixo do h3 vamos incluir 
+                    <h3>Entre em sua Conta</h3>
+                     <form>
+                       <label>Digite seu e-mail</label>
+                       <input placeholder="Digite seu e-mail"/>
+                       <label>Digite sua senha</label>
+                       <input placeholder="Digite sua senha" type="password"/> (type= coloca as bolinhas no
+                                                                                      formulario quando vai digitar)
+                     </form>
+13: ai vamos estilizar no css o form (como só tem um form usando, estiliza direto, quando tem mais, dar classe)
+                     form {     }
+                            displey: flex;
+                            flex-direction: column;
+                            margin-top: 20px;
+14: ai vamos estilizar o label da mesma coisa do form, como tem um vai direto, tivesse mais criar classe pra ela
+                     label {     }
+                             font-weight: bold;
+                             font-size: 14px;
+                             margin: 10px 0; (o 0 alinha as linhas)
+15: ai vamos estilizar o input da mesma forma dos outros .....
+                     input {     }
+                              outline: 0;
+                              border: 2px solid #D0CBE4;
+                              border-radius: 10px;
+                              padding: 10px;
+16: quando o input for clicado para preencher, aparece outra cor dentro do input
+                     input:focus {    }
+                                   border: 2px solid #8376BA;
+17: criar no css dentro do placerolder q fica dentro do input, alterar a cor da fonte qdo estiver digitando
+                     ::placeholder {    }
+                                     color: #C1C1C1;
+18: ai vamos criar a tag de botao, la no html, dentro do form, abaixo do ultimo input
+                     <button>Enviar</button>
+19: ai vamos ao css, estilizar o botao, naquele mesmo esquema .....
+                      button {     }
+                                margin-top: 20px;
+                                padding: 12px;
+                                color: white;
+                                font-weight: bold;
+                                background-color: #967AFE;
+                                border-radius: 10px;
+                                border: 0;
+                                cursor: pointer;
+20: ai no html abaixo da tag form vamos criar um paragrafo, e abrir um link com # (q nao faz nada)
+                     <p>Não está cadastrado?<a href="#">Crie uma conta</a></p>
+21: ai vai no css estilizar o p, naquele mesmo esquema ....
+                      p {     }
+                           font-size: 14px;
+                           text-align: center;
+                      a {     }
+                           color: #967AFE;
+                           font-weight: bold;
+                           text-decoration: none;                         
